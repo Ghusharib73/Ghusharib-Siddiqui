@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ghusharib Siddiqui | AI Developer</title>
+
+    <!-- SEO / social share preview -->
+    <meta name="description" content="Ghusharib Siddiqui — AI-focused web developer building responsive, interactive front-end experiences with HTML, CSS, and JavaScript.">
+    <meta property="og:title" content="Ghusharib Siddiqui | AI Developer">
+    <meta property="og:description" content="AI-focused web developer building responsive, interactive front-end experiences with HTML, CSS, and JavaScript.">
+    <meta property="og:type" content="website">
+    <!-- Update to a full https:// URL once the site is deployed so link previews can load the image -->
+    <meta property="og:image" content="./assets/Images/Potrait%20Card%20Image.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicon: inline SVG so no extra asset file is needed -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23070a10'/%3E%3Ctext x='32' y='43' font-family='Arial, sans-serif' font-size='28' font-weight='700' fill='%238fb9ff' text-anchor='middle'%3EGS%3C/text%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        class="fonts-google" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Applies the saved theme before first paint so there's no flash of the
+         wrong theme (script.js still runs later to sync the toggle icon). -->
+    <script>
+        (function () {
+            var saved = localStorage.getItem("ghusharib-theme");
+            document.documentElement.setAttribute("data-theme", saved === "light" ? "light" : "dark");
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="cursor-ring"></div>
+    <div class="boot" id="boot">
+        <div class="boot-core">
+            <div class="boot-logo">GS</div>
+            <div class="boot-line">
+                <i></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+    <!-- NAVBAR -->
+    <nav class="nav" id="navbar">
+        <a href="#home" class="brand">
+            <div class="brand-logo">GS</div>
+            <div class="brand-text">
+                <strong>Ghusharib Siddiqui</strong>
+                <span>AI Developer</span>
+            </div>
+        </a>
+
+        <div class="navlinks" id="navlinks">
+            <div class="nav-links-list" id="navLinksList">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+
+                <a href="./assets/CV/Ghusharib-CV.pdf" id="downloadCvBtn" class="nav-cta" target="_blank" rel="noopener noreferrer">
+                   Download CV
+                </a>
+            </div>
+
+            <button
+                class="menu-btn"
+                id="menuBtn"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navLinksList"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <main id="home">
+        <section class="hero">
+            <div class="wrap hero-grid">
+                <div class="hero-content">
+                    <div class="eyebrow">
+                        <i></i>
+                        Learning • Building • Creating
+                    </div>
+
+                    <h1>
+                        Exploring
+                        <span class="shine">AI.</span>
+                        <br>
+                        Building the Future.
+                    </h1>
+
+                    <p class="hero-copy">
+                        AI-Focused Web Developer. HTML, CSS, and
+                        JavaScript are my core skills. I work with
+                        modern front-end tools to create responsive
+                        interfaces and build interactive digital
+                        experiences. Video editing and visual content
+                        are also part of my background. I blend
+                        development, design, and AI to create modern,
+                        engaging, and user-focused web experiences.
+                    </p>
+
+                    <div class="role-line">
+                        Role:
+                        <span class="role-text">AI Developer</span>
+                    </div>
+
+                    <div class="actions">
+                        <a
+                            href="https://www.linkedin.com/in/ghusharib-siddiqui-884270278"
+                            class="btn primary"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span id="linkedinbtn">LinkedIn</span>
+                            <b>↗</b>
+                        </a>
+
+                        <a href="#projects" class="btn">
+                            <span>View Projects</span>
+                            <b>↗</b>
+                        </a>
+                    </div>
+
+                    <div class="hero-metrics">
+                        <div class="metric">
+                            <b>3</b>
+                            <span>Projects</span>
+                        </div>
+                        <div class="metric">
+                            <b>0</b>
+                            <span>Years Experience</span>
+                        </div>
+                        <div class="metric">
+                            <b>6</b>
+                            <span>Core Skills</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portrait-shell">
+                    <div class="portrait-glow"></div>
+
+                    <div class="hud one">
+                        Status
+                        <b>Currently Learning</b>
+                    </div>
+
+                    <div class="hud two">
+                        Focus
+                        <b>AI × Web</b>
+                    </div>
+
+                    <div class="hud three">
+                        Skills
+                        <b>HTML / CSS / JS</b>
+                    </div>
+
+                    <div class="depth-line d1"></div>
+                    <div class="depth-line d2"></div>
+
+                    <div class="portrait-card" id="portraitCard">
+                        <div class="photo-placeholder">
+                            <img
+                                class="hero-photo"
+                                src="./assets/Images/Potrait Card Image.png"
+                                alt="Ghusharib Siddiqui"
+                            />
+                        </div>
+
+                        <div class="portrait-tag">
+                            <div>
+                                <b>Ghusharib Siddiqui</b>
+                                <span>AI Developer</span>
+                            </div>
+                            <i class="status-dot"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="scroll-explore" href="#about" aria-label="Scroll to explore more">
+                <span class="scroll-explore-label">Scroll to Explore</span>
+                <span class="scroll-explore-line" aria-hidden="true"></span>
+            </a>
+        </section>
+
+        <!-- MOVING SKILLS SLIDER -->
+        <div class="marquee" aria-label="Skills and technologies">
+            <div class="marquee-track">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Video Editing</span>
+                <span>AI</span>
+                <span>Web Development</span>
+                <span>Responsive Design</span>
+                <span>Interactive Experiences</span>
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Video Editing</span>
+                <span>AI</span>
+                <span>Web Development</span>
+                <span>Responsive Design</span>
+                <span>Interactive Experiences</span>
+            </div>
+        </div>
+
+        <!-- ABOUT -->
+        <section class="about" id="about">
+            <div class="wrap">
+                <div class="about-grid">
+                    <div class="about-content about-reveal">
+                        <div class="about-label">
+                            <i></i>
+                            ABOUT ME
+                        </div>
+                        <h2 class="about-title">
+                            Building with code.<br>
+                            <span class="gradient">Exploring with AI.</span>
+                        </h2>
+                        <p class="about-description">
+                            I’m a first-year Pre-Engineering student at DJ Sindh Government Science College,
+                            currently learning web development with HTML, CSS and JavaScript. I’m also exploring
+                            AI and modern front-end development with the goal of growing into a professional developer.
+                        </p>
+                    </div>
+
+                    <div class="about-card about-reveal">
+                        <div class="card-top">
+                            <span>QUICK PROFILE</span>
+                            <div class="status">
+                                <i class="status-dot"></i>
+                                OPEN TO LEARN
+                            </div>
+                        </div>
+
+                        <h3 class="profile-name">Ghusharib Siddiqui</h3>
+                        <div class="profile-role">AI &amp; Front-End Developer Student</div>
+
+                        <div class="profile-info">
+                            <div class="profile-row">
+                                <span>Location</span>
+                                <strong>Karachi, Pakistan</strong>
+                            </div>
+                            <div class="profile-row">
+                                <span>Core Skills</span>
+                                <strong>HTML · CSS · JavaScript</strong>
+                            </div>
+                            <div class="profile-row">
+                                <span>Focus</span>
+                                <strong>Web · Front-End · AI</strong>
+                            </div>
+                            <div class="profile-row">
+                                <span>Currently</span>
+                                <strong>Learning &amp; Building</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-bottom about-reveal">
+                    <div class="focus-area">
+                        <span class="focus-label">CURRENT FOCUS</span>
+                        <span class="focus-tag">#WebDevelopment</span>
+                        <span class="focus-tag">#Frontend</span>
+                        <span class="focus-tag">#JavaScript</span>
+                        <span class="focus-tag">#AI</span>
+                        <span class="focus-tag">#HTML</span>
+                        <span class="focus-tag">#CSS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERTISE / SKILLS -->
+        <section class="expertise-section" id="skills">
+            <div class="wrap">
+                <div class="expertise-header">
+                    <div class="skills-reveal">
+                        <div class="expertise-kicker">EXPERTISE</div>
+                        <h2 class="expertise-title">
+                            Building strong foundations for
+                            <span>modern web &amp; AI experiences.</span>
+                        </h2>
+                        <div class="expertise-accent-line"></div>
+                    </div>
+
+                    <p class="expertise-description skills-reveal delay-1">
+                        I’m developing my skills across front-end development,
+                        responsive design and AI-assisted workflows — combining
+                        what I learn with creativity to build modern and
+                        interactive digital experiences.
+                    </p>
+                </div>
+
+                <div class="expertise-grid">
+                    <article class="expertise-card skills-reveal delay-1">
+                        <div class="expertise-number">01 / FRONT-END DEVELOPMENT</div>
+                        <h3>HTML, CSS &amp; JavaScript</h3>
+                        <p>
+                            Building the core structure, styling and interactivity
+                            of modern websites while strengthening my front-end
+                            development fundamentals.
+                        </p>
+                    </article>
+
+                    <article class="expertise-card skills-reveal delay-2">
+                        <div class="expertise-number">02 / RESPONSIVE DESIGN</div>
+                        <h3>Responsive Web Design</h3>
+                        <p>
+                            Creating layouts that adapt smoothly across desktop,
+                            tablet and mobile screens with a focus on clean,
+                            accessible and user-friendly interfaces.
+                        </p>
+                    </article>
+
+                    <article class="expertise-card skills-reveal delay-2">
+                        <div class="expertise-number">03 / AI</div>
+                        <h3>AI-Assisted Development</h3>
+                        <p>
+                            Exploring AI tools and prompting techniques to support
+                            development workflows, learning and new approaches to
+                            modern web development.
+                        </p>
+                    </article>
+
+                    <article class="expertise-card skills-reveal delay-3">
+                        <div class="expertise-number">04 / VIDEO EDITING</div>
+                        <h3>Video Editing</h3>
+                        <p>
+                            I have hands-on experience in video editing and enjoy creating
+                            clean, engaging, and polished videos. I can work with cuts,
+                            transitions, effects, music, and timing to improve the overall
+                            quality and presentation of video content.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="expertise-meta skills-reveal delay-3">
+                    <div class="expertise-tags">
+                        <span class="expertise-tag">HTML</span>
+                        <span class="expertise-tag">CSS</span>
+                        <span class="expertise-tag">JavaScript</span>
+                        <span class="expertise-tag">Responsive</span>
+                        <span class="expertise-tag">AI</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="projects-section" id="projects">
+            <div class="wrap">
+                <div class="projects-header">
+                    <div>
+                        <div class="projects-kicker">PROJECTS</div>
+                        <h2 class="projects-title">
+                            Real projects.<br>
+                            <span>Different industries.</span>
+                        </h2>
+                    </div>
+
+                    <p class="projects-description">
+                        A selection of practical projects built during my learning journey,
+                        combining front-end development, JavaScript, responsive design and
+                        creative digital work.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- PROJECT 01 -->
+                    <article class="project-card">
+                        <div class="project-image-wrap">
+                            <img src="./assets/Images/GRAIN.png" alt="GRAIN E-Commerce">
+                        </div>
+
+                        <div class="project-top">
+                            <span class="project-tag">E-COMMERCE WEB DEVELOPMENT</span>
+                            <span class="project-number">01</span>
+                        </div>
+
+                        <div class="project-content">
+                            <h3>GRAIN.</h3>
+                            <p>
+                                A modern fashion e-commerce website created as my course
+                                mid-term project. It features product categories, responsive
+                                design, interactive elements, and a clean shopping experience.
+                            </p>
+
+                            <div class="project-meta">
+                                <div class="project-tech">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                </div>
+
+                                <a href="https://ghusharib73.github.io/GRAIN/" class="project-link" rel="noopener noreferrer" target="_blank" aria-label="GRAIN project">
+                                    View Project
+                                    <span class="project-arrow">↗</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 02 -->
+                    <article class="project-card">
+                        <div class="project-image-wrap">
+                            <img src="./assets/Images/Todo Application.png" alt="Todo Application">
+                        </div>
+
+                        <div class="project-top">
+                            <span class="project-tag">JAVASCRIPT / CRUD</span>
+                            <span class="project-number">02</span>
+                        </div>
+
+                        <div class="project-content">
+                            <h3>Todo Application</h3>
+                            <p>
+                                A simple Todo application created as part of my course to
+                                practice JavaScript and CRUD operations. Users can add,
+                                edit, and delete tasks through an interactive interface.
+                            </p>
+
+                            <div class="project-meta">
+                                <div class="project-tech">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>CRUD</span>
+                                </div>
+
+                                <a href="https://ghusharib73.github.io/Todo-Application/" class="project-link" target="_blank" aria-label="Todo project">
+                                    View Project
+                                    <span class="project-arrow">↗</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 03 -->
+                    <article class="project-card">
+                        <div class="project-image-wrap">
+                            <div class="project-visual-placeholder">
+                                <div class="film-ui">
+                                    <span class="film-label">Video Editing Portfolio</span>
+                                    <span class="film-play">▶</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-top">
+                            <span class="project-tag">VIDEO EDITING</span>
+                            <span class="project-number">03</span>
+                        </div>
+
+                        <div class="project-content">
+                            <h3>Video Editing Portfolio</h3>
+                            <p>
+                                A collection of my video editing work showcasing clean cuts,
+                                smooth transitions, visual effects, music syncing, and creative
+                                video presentation.
+                            </p>
+
+                            <div class="project-meta">
+                                <div class="project-tech">
+                                    <span>Adobe Premiere</span>
+                                    <span>CapCut</span>
+                                </div>
+
+                                <a class="project-link"
+                                   href="https://drive.google.com/drive/folders/10iVAsW2In195xnYLsq1VVwX1d16LbvsA"
+                                   target="_blank"
+                                   rel="noopener noreferrer">
+                                    View Portfolio
+                                    <span class="project-arrow">↗</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="ai-projects-strip">
+                    <div class="ai-projects-top">
+                        <span class="ai-projects-label">PROJECT FOCUS</span>
+                        <span class="ai-projects-note">Development &amp; creative work</span>
+                    </div>
+
+                    <div class="ai-project-tags">
+                        <span class="ai-project-tag">Web Development</span>
+                        <span class="ai-project-tag">JavaScript</span>
+                        <span class="ai-project-tag">Responsive Design</span>
+                        <span class="ai-project-tag">E-Commerce</span>
+                        <span class="ai-project-tag">CRUD</span>
+                        <span class="ai-project-tag">Video Editing</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact-section" id="contact">
+            <div class="contact-glow" aria-hidden="true"></div>
+
+            <div class="wrap contact-wrap">
+                <div class="contact-card contact-reveal">
+                    <div class="contact-header">
+                        <div class="contact-reveal">
+                            <div class="contact-kicker">
+                                <i></i>
+                                CONTACT
+                            </div>
+                            <h2 class="contact-title">
+                                Let’s Build Something
+                                <span>Great Together</span>
+                            </h2>
+                        </div>
+
+                        <p class="contact-intro contact-reveal">
+                            I’m always excited to learn, create, and work on new ideas.
+                            Have a project or idea in mind? Let’s connect and make it happen.
+                        </p>
+                    </div>
+
+                    <div class="contact-actions">
+                        <a
+                            class="contact-btn primary"
+                            href="https://www.linkedin.com/in/ghusharib-siddiqui-884270278"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span>Message on LinkedIn</span>
+                            <b>↗</b>
+                        </a>
+
+                        <a
+                            class="contact-btn"
+                            href="https://github.com/Ghusharib73"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span>View GitHub</span>
+                            <b>↗</b>
+                        </a>
+
+                        <a
+                            class="contact-btn"
+                            href="mailto:ghusharibsiddiqui2009@gmail.com?subject=Project%20Inquiry"
+                        >
+                            <span>Email me</span>
+                            <b>↗</b>
+                        </a>
+
+                        <a
+                            class="contact-btn"
+                            href="https://wa.me/923310400226"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span>WhatsApp</span>
+                            <b>↗</b>
+                        </a>
+                    </div>
+
+                    <div class="contact-details">
+                        <a href="mailto:ghusharibsiddiqui2009@gmail.com">
+                            ghusharibsiddiqui2009@gmail.com
+                        </a>
+                        <span>•</span>
+                        <a
+                            href="https://wa.me/923310400226"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            +923310400226
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <p class="footer-copy">© 2026 Ghusharib Siddiqui.</p>
+            <p class="footer-role">AI Development • Web Development</p>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP & THEME TOGGLE -->
+    <a class="whatsapp-float" href="https://wa.me/923310400226" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.52 3.48A11.82 11.82 0 0 0 12.04.06C5.48.06.14 5.4.14 11.96c0 2.1.55 4.15 1.59 5.96L.05 23.94l6.18-1.62a11.9 11.9 0 0 0 5.81 1.48h.01c6.56 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.17-3.42-8.42ZM12.05 21.7h-.01a9.72 9.72 0 0 1-4.95-1.36l-.36-.21-3.67.96.98-3.58-.23-.37a9.72 9.72 0 0 1-1.49-5.18c0-5.38 4.38-9.76 9.77-9.76 2.6 0 5.05 1.01 6.89 2.85a9.68 9.68 0 0 1 2.86 6.9c0 5.38-4.38 9.75-9.79 9.75Zm5.35-7.3c-.29-.15-1.7-.84-1.97-.94-.26-.1-.45-.15-.64.15-.19.29-.74.94-.91 1.13-.17.19-.33.22-.62.07-.29-.15-1.23-.45-2.34-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.33.43-.49.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.15-.64-1.54-.88-2.11-.23-.55-.47-.48-.64-.49h-.55c-.19 0-.5.07-.76.36-.26.29-.99.97-.99 2.37s1.01 2.75 1.15 2.94c.15.19 1.98 3.03 4.8 4.25.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.7-.69 1.94-1.35.24-.66.24-1.23.17-1.35-.07-.12-.26-.19-.55-.34Z"/>
+        </svg>
+    </a>
+
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme" title="Switch theme">
+        <span id="themeIcon">☼</span>
+    </button>
+
+    <!-- SINGLE SCRIPT LOAD -->
+    <script src="script.js" defer></script>
+</body>
+</html>
